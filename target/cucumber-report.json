@@ -1,0 +1,75 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language:pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 224812700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.SetUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Retornar personagens do star wars",
+        "description": "",
+        "id": "realizar-atividades-com-restassured;retornar-personagens-do-star-wars",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 69791399,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "o link da api swapi co",
+            "match": {
+              "location": "SwapiStep.o_link_da_api_swapi_co()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 8199,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "acessar a api",
+            "match": {
+              "location": "SwapiStep.acessar_a_api()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 7600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "devera retornar os personagens do star wars",
+            "match": {
+              "location": "SwapiStep.devera_retornar_os_personagens_do_star_wars()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      }
+    ],
+    "name": "Realizar atividades com RestAssured",
+    "description": "",
+    "id": "realizar-atividades-com-restassured",
+    "keyword": "Funcionalidade",
+    "uri": "swapi.feature"
+  }
+]
