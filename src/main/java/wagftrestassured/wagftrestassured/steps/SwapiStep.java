@@ -1,6 +1,11 @@
 package wagftrestassured.wagftrestassured.steps;
+import static com.jayway.restassured.RestAssured.given;
 
-import cucumber.api.PendingException;
+
+import models.Films;
+
+import com.jayway.restassured.path.json.JsonPath;
+
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
@@ -8,12 +13,14 @@ import cucumber.api.java.pt.Quando;
 public class SwapiStep {
 
 	@Dado("^o link da api swapi co$")
-	public void o_link_da_api_swapi_co() throws Throwable {
-	   
+	public void linkApi() throws Throwable {
+	 JsonPath json =  given().header("accept","application/json").get("films/1/").andReturn().jsonPath();
+ 	Films filme = json.getObject("", Films.class);
+	 System.out.println(filme.getDirector());
 	}
 
 	@Quando("^acessar a api$")
-	public void acessar_a_api() throws Throwable {
+	public void accessApi() throws Throwable {
 	   
 	}
 
