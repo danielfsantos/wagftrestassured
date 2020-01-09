@@ -3,6 +3,7 @@ import static com.jayway.restassured.RestAssured.given;
 
 
 import models.Films;
+import apiObjects.SwapiApiObject;
 
 import com.jayway.restassured.path.json.JsonPath;
 
@@ -12,11 +13,11 @@ import cucumber.api.java.pt.Quando;
 
 public class SwapiStep {
 
+	public  SwapiApiObject swpiobject = new SwapiApiObject(); 
+	
 	@Dado("^o link da api swapi co$")
 	public void linkApi() throws Throwable {
-	 JsonPath json =  given().header("accept","application/json").get("films/1/").andReturn().jsonPath();
- 	Films filme = json.getObject("", Films.class);
-	 System.out.println(filme.getDirector());
+		swpiobject.serializableObjectFilms();
 	}
 
 	@Quando("^acessar a api$")

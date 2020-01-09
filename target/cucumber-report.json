@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 233615000,
+              "duration": 239403600,
               "status": "passed"
             },
             "match": {
@@ -29,9 +29,8 @@
         "steps": [
           {
             "result": {
-              "duration": 2725559300,
-              "error_message": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"edited\" (class models.Films), not marked as ignorable (2 known properties: \"director\", \"tittle\"])\n at [Source: {\"edited\":\"2015-04-11T09:46:52.774897Z\",\"director\":\"George Lucas\",\"created\":\"2014-12-10T14:23:31.880000Z\",\"vehicles\":[\"https://swapi.co/api/vehicles/4/\",\"https://swapi.co/api/vehicles/6/\",\"https://swapi.co/api/vehicles/7/\",\"https://swapi.co/api/vehicles/8/\"],\"opening_crawl\":\"It is a period of civil war.\\r\\nRebel spaceships, striking\\r\\nfrom a hidden base, have won\\r\\ntheir first victory against\\r\\nthe evil Galactic Empire.\\r\\n\\r\\nDuring the battle, Rebel\\r\\nspies managed to steal secret\\r\\nplans to the Empire\u0027s\\r\\nultimate weapon, the DEATH\\r\\nSTAR, an armored space\\r\\nstation with enough power\\r\\nto destroy an entire planet.\\r\\n\\r\\nPursued by the Empire\u0027s\\r\\nsinister agents, Princess\\r\\nLeia races home aboard her\\r\\nstarship, custodian of the\\r\\nstolen plans that can save her\\r\\npeople and restore\\r\\nfreedom to the galaxy....\",\"title\":\"A New Hope\",\"url\":\"https://swapi.co/api/films/1/\",\"characters\":[\"https://swapi.co/api/people/1/\",\"https://swapi.co/api/people/2/\",\"https://swapi.co/api/people/3/\",\"https://swapi.co/api/people/4/\",\"https://swapi.co/api/people/5/\",\"https://swapi.co/api/people/6/\",\"https://swapi.co/api/people/7/\",\"https://swapi.co/api/people/8/\",\"https://swapi.co/api/people/9/\",\"https://swapi.co/api/people/10/\",\"https://swapi.co/api/people/12/\",\"https://swapi.co/api/people/13/\",\"https://swapi.co/api/people/14/\",\"https://swapi.co/api/people/15/\",\"https://swapi.co/api/people/16/\",\"https://swapi.co/api/people/18/\",\"https://swapi.co/api/people/19/\",\"https://swapi.co/api/people/81/\"],\"episode_id\":4,\"planets\":[\"https://swapi.co/api/planets/2/\",\"https://swapi.co/api/planets/3/\",\"https://swapi.co/api/planets/1/\"],\"release_date\":\"1977-05-25\",\"starships\":[\"https://swapi.co/api/starships/2/\",\"https://swapi.co/api/starships/3/\",\"https://swapi.co/api/starships/5/\",\"https://swapi.co/api/starships/9/\",\"https://swapi.co/api/starships/10/\",\"https://swapi.co/api/starships/11/\",\"https://swapi.co/api/starships/12/\",\"https://swapi.co/api/starships/13/\"],\"species\":[\"https://swapi.co/api/species/5/\",\"https://swapi.co/api/species/3/\",\"https://swapi.co/api/species/2/\",\"https://swapi.co/api/species/1/\",\"https://swapi.co/api/species/4/\"],\"producer\":\"Gary Kurtz, Rick McCallum\"}; line: 1, column: 12] (through reference chain: models.Films[\"edited\"])\r\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:62)\r\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:834)\r\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1093)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1477)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1455)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:282)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:140)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3798)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2880)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper$readValue$0.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)\r\n\tat com.jayway.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:43)\r\n\tat com.jayway.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:122)\r\n\tat com.jayway.restassured.internal.path.json.mapping.JsonObjectDeserializer.deserializeWithJackson2(JsonObjectDeserializer.groovy:98)\r\n\tat com.jayway.restassured.internal.path.json.mapping.JsonObjectDeserializer$deserializeWithJackson2.callStatic(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:191)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:211)\r\n\tat com.jayway.restassured.internal.path.json.mapping.JsonObjectDeserializer.deserialize(JsonObjectDeserializer.groovy:67)\r\n\tat com.jayway.restassured.path.json.JsonPath.getObject(JsonPath.java:543)\r\n\tat wagftrestassured.wagftrestassured.steps.SwapiStep.linkApi(SwapiStep.java:18)\r\n\tat ✽.Dado o link da api swapi co(swapi.feature:5)\r\n",
-              "status": "failed"
+              "duration": 1989399100,
+              "status": "passed"
             },
             "line": 5,
             "name": "o link da api swapi co",
@@ -42,7 +41,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 12900,
+              "status": "passed"
             },
             "line": 6,
             "name": "acessar a api",
@@ -53,7 +53,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 8300,
+              "status": "passed"
             },
             "line": 7,
             "name": "devera retornar os personagens do star wars",
