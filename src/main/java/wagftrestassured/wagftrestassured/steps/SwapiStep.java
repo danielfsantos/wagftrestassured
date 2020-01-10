@@ -1,34 +1,23 @@
 package wagftrestassured.wagftrestassured.steps;
-import static com.jayway.restassured.RestAssured.given;
+import java.util.List;
+import java.util.Map;
 
-
-import models.Films;
 import apiObjects.SwapiApiObject;
-
-import com.jayway.restassured.path.json.JsonPath;
-
+import cucumber.api.DataTable;
 import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 
 public class SwapiStep {
-
-	public  SwapiApiObject swpiobject = new SwapiApiObject(); 
+	SwapiApiObject swapiObject = new SwapiApiObject();
 	
-	@Dado("^o link da api swapi co$")
-	public void linkApi() throws Throwable {
-		swpiobject.serializableObjectFilms();
-	}
-
-	@Quando("^acessar a api$")
+	@Dado("^o link da api$")
 	public void accessApi() throws Throwable {
-	   
+		swapiObject.serializableObjectFilms();
 	}
 
-	@Então("^devera retornar os personagens do star wars$")
-	public void devera_retornar_os_personagens_do_star_wars() throws Throwable {
-	   
+	@Quando("^acessar api devera retornar o filme$")
+	public void returnFilm(DataTable dt) throws Throwable {
+	  List<Map<String,String>> list = dt.asMaps(String.class, String.class);
+	  swapiObject.expectFilm(list);
 	}
-
-	
 }
